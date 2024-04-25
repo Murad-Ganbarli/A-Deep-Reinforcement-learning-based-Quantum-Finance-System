@@ -19,7 +19,7 @@ def draw_transaction(product):
     import os
 
     current_directory = os.getcwd()
-    data = pd.read_csv( current_directory+'/Data/'+product+'/Source.csv').iloc[:,0:5].iloc[::-1]
+    data = pd.read_csv( current_directory+'/Data/'+product+'/source.csv').iloc[:,0:5].iloc[::-1]
     data['trade_date'] = range(0, len(data))
     df = data.loc[:,['trade_date','OPEN','HIGH','LOW','CLOSE','VOLUME']]
 
