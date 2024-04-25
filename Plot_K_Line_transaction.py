@@ -121,7 +121,7 @@ def draw_transaction(product):
     ax2.grid(True)
     ax2.set_ylabel('Volume',color='#f43221')
 
-    ax3.plot(pd.read_csv('Data/AUDUSD/Source.csv')['RSI'].tolist(),label='RSI',linewidth=1.5)
+    ax3.plot(pd.read_csv('Data/AUDUSD/source.csv')['RSI'].tolist(),label='RSI',linewidth=1.5)
     ax3.yaxis.set_ticks_position('left')
     ax3.legend(loc='lower right')
     ax3.grid(True)
