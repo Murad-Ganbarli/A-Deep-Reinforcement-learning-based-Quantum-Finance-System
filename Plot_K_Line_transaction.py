@@ -17,9 +17,6 @@ from matplotlib.collections import LineCollection,PolyCollection
 
 def draw_transaction(product):
     import os
-
-    current_directory = os.getcwd()
-    print("Current directory:",          current_directory)
     data = pd.read_csv('content/A-Deep-Reinforcement-learning-based-Quantum-Finance-System/Data/'+product+'/source.csv').iloc[:,0:5].iloc[::-1]
     data['trade_date'] = range(0, len(data))
     df = data.loc[:,['trade_date','OPEN','HIGH','LOW','CLOSE','VOLUME']]
