@@ -28,8 +28,6 @@ def draw_transaction(product):
     matix = df.values
     xdates = matix[:, 0]
 
-
-    plt.rc('font', family='Microsoft YaHei')
     plt.rc('figure', fc='k')
     plt.rc('text', c='#f00000')
     plt.rc('axes', axisbelow=True, xmargin=0, fc='k', ec='#800000', lw=2, labelcolor='#800000', unicode_minus=False)
